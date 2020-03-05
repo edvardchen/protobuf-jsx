@@ -6,7 +6,6 @@ extends:
   - 'eslint:recommended'
   - 'plugin:@typescript-eslint/recommended'
   - prettier/@typescript-eslint
-  - prettier/@typescript-eslint
   - prettier
 globals:
   Atomics: readonly
@@ -27,3 +26,12 @@ rules:
     - 1
     - argsIgnorePattern: ^_|ignore
       varsIgnorePattern: ^_|ignore
+overrides:
+  - files: __tests__/**
+    rules:
+      no-console: 0
+      react/jsx-uses-vars: 2
+    plugins:
+      - react
+    env:
+      jest: true

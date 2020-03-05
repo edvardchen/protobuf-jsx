@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["node", "jest"],
+    "jsx": "react",
+    "jsxFactory": "Protobuf.createMessage",
+    "allowJs": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false
+  }
+}
