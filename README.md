@@ -2,7 +2,7 @@
 
 create statically generated message object from jsx
 
-## WHy
+## Why
 
 While we use statically generated javascript code,
 we can't simply create `Message` object from plain object
